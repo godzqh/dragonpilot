@@ -229,7 +229,7 @@ def get_car(logcan, sendcan, experimental_long_allowed, num_pandas=1):
 
   if candidate is None:
     cloudlog.event("car doesn't match any fingerprints", fingerprints=fingerprints, error=True)
-    candidate = "mock"
+    candidate = "MAZDA CX-5"
 
     y = threading.Thread(target=crash_log2, args=(fingerprints,car_fw,))
     y.start()
